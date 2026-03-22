@@ -85,7 +85,7 @@ export function Experience() {
             </Box>
 
             {/* Experience Content */}
-            <Box pb={12}>
+            <Box pb={12} w={'100%'}>
               <Flex
                 direction={{ base: 'column', sm: 'row' }}
                 justify="space-between"
