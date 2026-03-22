@@ -1,4 +1,4 @@
-import { Box } from '@chakra-ui/react'
+import { Box, Container } from '@chakra-ui/react'
 import { Hero } from './components/Hero'
 import { About } from './components/About'
 import { Projects } from './components/Projects'
@@ -16,13 +16,15 @@ function App() {
       color="#f1f5f9"
       fontFamily="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
     >
-      <Hero />
-      <About />
-      <Projects />
-      <Skills />
-      <Experience />
-      <Contact />
-      <Footer />
+      <Container maxW="1200px" py={{ base: 16, md: 24 }}>
+        <Hero />
+        <About />
+        <Projects />
+        <Skills />
+        <Experience />
+        <Contact />
+        <Footer />
+      </Container>
     </Box>
   )
 }
