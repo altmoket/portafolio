@@ -1,5 +1,4 @@
 import { Box } from '@chakra-ui/react'
-import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { About } from './components/About'
 import { Projects } from './components/Projects'
@@ -13,11 +12,10 @@ function App() {
     <Box
       w="100%"
       overflowX="hidden"
-      bg="#0f172a"
+      bg="#171816"
       color="#f1f5f9"
       fontFamily="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
     >
-      <Header />
       <Hero />
       <About />
       <Projects />
