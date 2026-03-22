@@ -1,4 +1,4 @@
-import { Box, Heading, SimpleGrid, Text, Badge, Link, VStack, Card } from '@chakra-ui/react'
+import { Box, Heading, SimpleGrid, Text, Badge, Link, VStack, Card, HStack } from '@chakra-ui/react'
 import Section from './Section'
 
 interface Project {
@@ -124,7 +124,7 @@ export function Projects() {
                 </Text>
 
                 {/* Tags */}
-                <VStack gap={2} align="start">
+                <HStack gap={2} wrap="wrap">
                   {project.tags.map((tag) => (
                     <Badge
                       key={tag}
@@ -138,7 +138,7 @@ export function Projects() {
                       {tag}
                     </Badge>
                   ))}
-                </VStack>
+                </HStack>
 
                 {/* Links */}
                 <VStack gap={4} pt={4}>
