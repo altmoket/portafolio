@@ -20,8 +20,8 @@ function App() {
         <VStack gap={10} align={'flex-start'}>
           <Hero />
           <About />
-          <Projects />
           <Skills />
+          <Projects />
           <Experience />
           <Contact />
           <Footer />
