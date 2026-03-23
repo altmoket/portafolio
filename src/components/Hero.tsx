@@ -22,6 +22,14 @@ export function Hero() {
   const handleDownloadCV = () => {
     window.location.href = './Leandro_Hernandez_CV.pdf'
   }
+
+  const handleGitHub = () => {
+    window.open('https://github.com/altmoket', '_blank')
+  }
+
+  const handleLinkedIn = () => {
+    window.open('https://www.linkedin.com/in/lnunez1457', '_blank')
+  }
   
   return (
     <VStack
@@ -71,12 +79,12 @@ export function Hero() {
           <IconButton onClick={handleDownloadCV} borderRadius={'full'} color={colors.text} bg={colors.bgCard} border={`1px solid ${colors.border}`} _hover={{ bg: colors.bgCardHover, borderColor: colors.accent }} aria-label="Download CV" transition="all 0.3s ease">
             <FaFileLines />
           </IconButton>
-          <Link as={IconButton} href="https://github.com/leandrohernandez" borderRadius={'full'} color={colors.text} bg={colors.bgCard} border={`1px solid ${colors.border}`} _hover={{ bg: colors.bgCardHover, borderColor: colors.accent }} aria-label="GitHub" transition="all 0.3s ease">
+          <IconButton onClick={handleGitHub} borderRadius={'full'} color={colors.text} bg={colors.bgCard} border={`1px solid ${colors.border}`} _hover={{ bg: colors.bgCardHover, borderColor: colors.accent }} aria-label="GitHub" transition="all 0.3s ease">
             <FiGithub />
-          </Link>
-          <Link as={IconButton} href="https://www.linkedin.com/in/lnunez1457" borderRadius={'full'} color={'#ffffff'} bg={'rgb(14, 118, 168, 1)'} _hover={{ bg: 'rgb(14, 118, 168, 0.8)' }} aria-label="LinkedIn">
+          </IconButton>
+          <IconButton onClick={handleLinkedIn} borderRadius={'full'} color={'#ffffff'} bg={'rgb(14, 118, 168, 1)'} _hover={{ bg: 'rgb(14, 118, 168, 0.8)' }} aria-label="LinkedIn">
             <FaLinkedin />
-          </Link>
+          </IconButton>
         </HStack>
         </VStack>
       </HStack>
