@@ -23,19 +23,35 @@ function ProjectModal({ project, open, onClose, colors }: { project: Project | n
                   Preview
                 </Text>
                 <SimpleGrid columns={{ base: 2, md: 3 }} gap={3}>
-                  {project.images.map((image, idx) => (
-                    <Center
-                      key={idx}
-                      w="full"
-                      h="120px"
-                      bg={colors.bgCardHover}
-                      borderRadius="8px"
-                      border={`1px solid ${colors.border}`}
-                      fontSize="48px"
-                    >
-                      {image}
-                    </Center>
-                  ))}
+                  {project.images.map((image, idx) => {
+                    const isEmoji = image.length <= 2 && !image.includes('/') && !image.includes('.');
+                    return (
+                      <Center
+                        key={idx}
+                        w="full"
+                        h="120px"
+                        bg={colors.bgCardHover}
+                        borderRadius="8px"
+                        border={`1px solid ${colors.border}`}
+                        fontSize="48px"
+                        overflow="hidden"
+                      >
+                        {isEmoji ? (
+                          image
+                        ) : (
+                          <img
+                            src={image}
+                            alt={`${project.title} ${idx + 1}`}
+                            style={{
+                              width: '100%',
+                              height: '100%',
+                              objectFit: 'cover'
+                            }}
+                          />
+                        )}
+                      </Center>
+                    );
+                  })}
                 </SimpleGrid>
               </Box>
             )}
@@ -138,11 +154,27 @@ export function AllProjects() {
             >
               <VStack align="start" gap={3} h="full">
                 {/* Project Image/Icon */}
-                {project.images && project.images.length > 0 && (
-                  <Center w="full" h="80px" bg={colors.bgCardHover} borderRadius="8px" fontSize="40px" mb={2}>
-                    {project.images[0]}
-                  </Center>
-                )}
+                {project.images && project.images.length > 0 && (() => {
+                  const firstImage = project.images[0];
+                  const isEmoji = firstImage.length <= 2 && !firstImage.includes('/') && !firstImage.includes('.');
+                  return (
+                    <Center w="full" h="80px" bg={colors.bgCardHover} borderRadius="8px" fontSize="40px" mb={2} overflow="hidden">
+                      {isEmoji ? (
+                        firstImage
+                      ) : (
+                        <img
+                          src={firstImage}
+                          alt={project.title}
+                          style={{
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'cover'
+                          }}
+                        />
+                      )}
+                    </Center>
+                  );
+                })()}
 
                 <Heading size="sm" color={colors.text}>
                   {project.title}

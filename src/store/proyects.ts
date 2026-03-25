@@ -24,28 +24,28 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    title: 'Task Management App',
-    description: 'Collaborative task management tool with real-time updates, team collaboration, and advanced filtering.',
-    images: ['✅'],
-    tags: ['TypeScript', 'React', 'Firebase', 'Tailwind'],
-    github: 'https://github.com'
+    title: 'Solving Hidatos',
+    description: 'Hidato is a logic puzzle game where players fill a grid with consecutive numbers that connect in various directions. Developed in Haskell, this project emphasizes critical thinking and problem-solving skills.',
+    images: ['/portfolio/projects/solving-hidatos/image01.jpeg', '/portfolio/projects/solving-hidatos/image02.jpeg'],
+    tags: ['Haskell', 'Logic Puzzles', 'Problem Solving'],
+    github: 'https://github.com/altmoket/solving_hidatos'
   },
   {
     id: 3,
-    title: 'AI Content Generator',
-    description: 'AI-powered content generation tool integrated with GPT API for creating marketing copy, blog posts, and more.',
-    images: ['🤖'],
-    tags: ['Next.js', 'OpenAI API', 'TypeScript', 'Vercel'],
+    title: 'Natural Ecosystem Simulator',
+    description: 'A simulation project modeling a natural ecosystem, exploring the evolution of various species and their interactions within distinct habitats.',
+    images: ['/portfolio/projects/natural-ecosystem-simulation/image01.png'],
+    tags: ['Python', 'pytest', 'Problem Solving', 'Simulation', 'scipy'],
     live: 'https://example.com',
-    github: 'https://github.com'
+    github: 'https://github.com/altmoket/sim_natural_ecosystem_dev'
   },
   {
     id: 4,
-    title: 'Analytics Dashboard',
-    description: 'Real-time analytics dashboard with data visualization, custom reports, and user behavior tracking.',
-    images: ['📊'],
-    tags: ['React', 'D3.js', 'Node.js', 'MongoDB'],
-    github: 'https://github.com'
+    title: 'Draw DSL',
+    description: 'Domain-Specific Language about painting flat shapes, fractals and trees.',
+    images: ['/portfolio/projects/draw-dsl/image01.png', '/portfolio/projects/draw-dsl/image02.png', '/portfolio/projects/draw-dsl/image03.png', '/portfolio/projects/draw-dsl/image04.png', '/portfolio/projects/draw-dsl/image05.png'],
+    tags: ['Python', 'pytest', 'Problem Solving', 'DSL', 'turtle'],
+    github: 'https://github.com/jordipynb/draw_dsl'
   },
   {
     id: 5,
