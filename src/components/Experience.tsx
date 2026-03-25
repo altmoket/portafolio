@@ -27,19 +27,6 @@ const experiences: Experience[] = [
   },
   {
     id: 2,
-    title: 'Full Stack Developer',
-    company: 'CLASS Limitless',
-    period: '12/2021 - 01/2022',
-    description: [
-      'Built REST APIs using Node.js and PostgreSQL',
-      'Assisted in database design and query optimization',
-      'Worked with Docker-based development environments',
-      'Implemented small internal tools to improve data access for the team',
-      'Collaborated with frontend developers to integrate APIs with React applications'
-    ]
-  },
-  {
-    id: 3,
     title: 'Full Stack Developer Intern',
     company: 'Grupo de Electronica para el Turismo, GET',
     period: '01/2021 - 07/2021',
