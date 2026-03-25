@@ -15,7 +15,6 @@ export const projects: Project[] = [
     description: 'A simulation project modeling a natural ecosystem, exploring the evolution of various species and their interactions within distinct habitats.',
     images: ['/portfolio/projects/natural-ecosystem-simulation/image01.png'],
     tags: ['Python', 'pytest', 'Problem Solving', 'Simulation', 'scipy'],
-    live: 'https://example.com',
     github: 'https://github.com/altmoket/sim_natural_ecosystem_dev'
   },
   {

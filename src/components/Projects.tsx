@@ -56,11 +56,6 @@ export function Projects() {
           </HStack>
 
           <HStack gap={6} pt={2}>
-            {featuredProject.live && (
-              <a href={featuredProject.live} target="_blank" rel="noopener noreferrer" style={{ color: colors.accent }}>
-                Live ↗
-              </a>
-            )}
             <a href={featuredProject.github} target="_blank" rel="noopener noreferrer" style={{ color: colors.accent }}>
               Code →
             </a>
@@ -103,11 +98,6 @@ export function Projects() {
               </HStack>
 
               <HStack gap={4} pt={2}>
-                {project.live && (
-                  <a href={project.live} target="_blank" rel="noopener noreferrer" style={{ fontSize: '14px', color: colors.accent }} onClick={(e) => e.stopPropagation()}>
-                    Live
-                  </a>
-                )}
                 <a href={project.github} target="_blank" rel="noopener noreferrer" style={{ fontSize: '14px', color: colors.accent }} onClick={(e) => e.stopPropagation()}>
                   Code
                 </a>

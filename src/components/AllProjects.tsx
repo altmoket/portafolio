@@ -104,11 +104,6 @@ export function AllProjects() {
                 </HStack>
 
                 <HStack gap={4} pt={2} w="full">
-                  {project.live && (
-                    <a href={project.live} target="_blank" rel="noopener noreferrer" style={{ fontSize: '14px', color: colors.accent }} onClick={(e) => e.stopPropagation()}>
-                      Live ↗
-                    </a>
-                  )}
                   <a href={project.github} target="_blank" rel="noopener noreferrer" style={{ fontSize: '14px', color: colors.accent }} onClick={(e) => e.stopPropagation()}>
                     Code →
                   </a>

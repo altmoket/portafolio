@@ -6,7 +6,6 @@ export type Project = {
   description: string
   images?: string[]
   tags: string[]
-  live?: string
   github: string
   featured?: boolean
 }

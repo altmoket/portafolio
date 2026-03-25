@@ -109,13 +109,6 @@ export function ProjectModal({ project, open, onClose, colors }: ProjectModalPro
 
           <Dialog.Footer>
             <HStack gap={3}>
-              {project.live && (
-                <a href={project.live} target="_blank" rel="noopener noreferrer">
-                  <Button size="sm" variant="outline" colorScheme="blue">
-                    Live ↗
-                  </Button>
-                </a>
-              )}
               <a href={project.github} target="_blank" rel="noopener noreferrer">
                 <Button size="sm" colorScheme="blue">
                   Code →
